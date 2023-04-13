@@ -1,0 +1,12 @@
+<body>
+  <h1>Grocery List</h1>
+  <ul>
+    <% groceries.forEach(grocery => { %>
+      <li>
+				<%= grocery.text %> 
+				- 
+				<%= grocery.got ? 'Got it' : 'Still need it' %>
+			</li>
+    <% }) %>
+  </ul>
+</body>
